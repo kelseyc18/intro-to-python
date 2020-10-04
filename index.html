@@ -134,8 +134,14 @@
     </section>
 
     <section class="slide" id="syntax">
-      <h2>Syntax</h2>
-      <p>Python uses <b>indentation</b> to specify blocks of code.</p>
+      <h2>Syntax (Grammar)</h2>
+      <p>
+        Your program will only run if it follows all the rules of Python
+        <b>syntax</b>.
+      </p>
+      <p>
+        For example, Python uses <b>indentation</b> to specify blocks of code.
+      </p>
       <div class="columns two">
         <div>
           <b>Correct syntax</b>
@@ -159,7 +165,7 @@
     </section>
 
     <section class="slide" id="syntax">
-      <h2>Reserved Words</h2>
+      <h2>Reserved Words (Vocabulary)</h2>
       <p>
         <b>Reserved words</b> have special meaning in Python. Later, we'll teach
         you how to add your own words to Python's vocabulary.
@@ -249,19 +255,117 @@
       <p>Placeholder</p>
     </section>
 
-    <section class="slide" id="lists">
+    <section class="slide" id="data-structures">
       <h2>Lists, Sets, and Dictionaries</h2>
-      <p>Placeholder</p>
+      <p><b>Data structures</b> are used to organize and store data.</p>
+      <ul>
+        <li class="next">
+          <b>Lists</b> are used to store an ordered sequence of values.
+        </li>
+        <li class="next">
+          <b>Sets</b> are like lists, but they do not store duplicate entries,
+          and they are unordered.
+        </li>
+        <li class="next">
+          <b>Dictionaries</b> are used to story <b>values</b> associated with
+          <b>keys</b>.
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="lists">
+      <h2>Lists</h2>
+      <p>Used to store an ordered sequence of values</p>
+      <a
+        href="http://pythontutor.com/visualize.html#code=cheeses%20%3D%20%5B'Cheddar',%20'Edam',%20'Gouda'%5D%0Anumbers%20%3D%20%5B17,%20123%5D%0Aempty%20%3D%20%5B%5D%0A%0A%23%20Access%20elements%20by%20index%0A%23%20-%20first%20element%20starts%20at%20index%200%0Aprint%28cheeses%5B0%5D%29%0A%0A%23%20Add%20element%20to%20list%0Acheeses.append%28'Parmesan'%29%0A%0A%23%20Remove%20element%20at%20a%20certain%20index%0Acheeses.pop%280%29%0A%0A%23%20Remove%20element%20from%20list%0Acheeses.remove%28'Edam'%29%0A%0A%23%20Length%20of%20list%0Aprint%28len%28cheeses%29%29%0A%0A%23%20Check%20list%20membership%0Aprint%28'Gouda'%20in%20cheeses%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"
+        >View Example on Python Tutor</a
+      >
+    </section>
+
+    <section class="slide" id="sets">
+      <h2>Sets</h2>
+      <p>
+        Like lists, but they do not store duplicate entries, and they are
+        unordered
+      </p>
+      <a
+        href="http://pythontutor.com/visualize.html#code=cheeses%20%3D%20set%28%5B'Cheddar',%20'Edam',%20'Gouda'%5D%29%0A%0A%23%20Add%20element%0Acheeses.add%28'Parmesan'%29%0Aprint%28len%28cheeses%29%29%0A%0A%23%20Try%20adding%20an%20element%20that%20already%20exists%0Acheeses.add%28'Gouda'%29%0Aprint%28len%28cheeses%29%29%0A%0A%23%20Remove%20an%20element%0Acheeses.remove%28'Edam'%29%0A%0A%23%20Check%20set%20membership%0Aprint%28'Gouda'%20in%20cheeses%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"
+        >View Example on Python Tutor</a
+      >
+    </section>
+
+    <section class="slide" id="dictionaries">
+      <h2>Dictionaries</h2>
+      <p>Used to store an ordered sequence of values</p>
+      <a
+        href="http://pythontutor.com/visualize.html#code=phone_numbers%20%3D%20%7B%0A%20%20%20%20'Breonna'%3A%20'%28408%29-123-4567',%0A%20%20%20%20'Sandra'%3A%20'%28408%29-234-5678'%0A%7D%0A%0A%23%20Add%20or%20update%20dictionary%20values%0Aphone_numbers%5B'Alex'%5D%3A%20'%28408%29-092-3423'%0Aphone_numbers%5B'Breonna'%5D%3A%20'%28510%29-123-4567'%0A%0A%23%20Access%20values%20based%20on%20keys%0Aprint%28phone_numbers%5B'Sandra'%5D%29%0A%0A%23%20Checking%20dictionary%20membership%0Aprint%28'Breonna'%20in%20phone_numbers%29%0Aprint%28'Joseph'%20in%20phone_numbers%29%0A%0A%23%20Get%20all%20keys%0Aall_keys%20%3D%20list%28phone_numbers.keys%28%29%29%0A%0A%23%20Get%20all%20values%0Aall_values%20%3D%20list%28phone_numbers.values%28%29%29%0A&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"
+        >View Example on Python Tutor</a
+      >
     </section>
 
     <section class="slide" id="loops">
       <h2>Loops</h2>
-      <p>Placeholder</p>
+      <ul>
+        <li class="next">
+          Computers are often used to automate repetitive tasks.
+        </li>
+        <li class="next">
+          Python has two types of loops that can be used to execute instructions
+          repeatedly: the <code>for</code> loop and the <code>while</code> loop.
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="for-loop">
+      <h2><code>For</code> loops</h2>
+      <p>The <code>for</code> loop is useful for iterating over a sequence.</p>
+      <a
+        href="http://pythontutor.com/visualize.html#code=%23%20Example%201%3A%20Iterate%20through%20a%20sequence%0Amy_favorite_numbers%20%3D%20%5B2,%208,%20100,%20-23%5D%0Afor%20num%20in%20my_favorite_numbers%3A%0A%20%20%20%20print%28num%29%0A%20%20%20%20print%28%22is%20even%3A%22,%20num%20%25%202%20%3D%3D%200%29%0Aprint%28'Done!'%29%0A%0A%23%20Example%202%3A%20Execute%20instructions%20a%20number%20of%20times%0Afor%20i%20in%20range%285%29%3A%0A%20%20%20%20print%28i%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"
+        >View example on Python Tutor</a
+      >
+    </section>
+
+    <section class="slide" id="while-loop">
+      <h2><code>While</code> loops</h2>
+      <p>
+        The <code>while</code> loop is used to repeatedly execute instructions
+        as long as a boolean condition is met.
+      </p>
+      <a
+        href="http://pythontutor.com/visualize.html#code=n%20%3D%205%0Awhile%20n%20%3E%200%3A%0A%20%20%20%20print%28n%29%0A%20%20%20%20n%20%3D%20n%20-%201%0Aprint%28'Blastoff!'%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"
+        >View example on Python Tutor</a
+      >
+    </section>
+
+    <section class="slide" id="break-continue">
+      <h2>Break and continue</h2>
+      <ul>
+        <li>
+          The <b>break</b> statement is used to exit early from a
+          <code>for</code> or <code>while</code> loop.
+        </li>
+        <li>
+          The <b>continue</b> statement is used to skip the rest of the loop
+          body and jump back to the <code>for</code> or
+          <code>while</code> statement.
+        </li>
+      </ul>
+      <a
+        href="http://pythontutor.com/visualize.html#code=cheeses%20%3D%20%5B'Cheddar',%20'Edam',%20'Gouda',%20'Parmesan'%5D%0A%0A%23%20break%20example%0Aprint%28%22Begin%20break%20example%22%29%0Afor%20cheese%20in%20cheeses%3A%0A%20%20%20%20if%20cheese%20%3D%3D%20'Gouda'%3A%0A%20%20%20%20%20%20%20%20break%0A%20%20%20%20print%28cheese%29%0A%0A%23%20continue%20example%0Aprint%28%22Begin%20continue%20example%22%29%0Afor%20cheese%20in%20cheeses%3A%0A%20%20%20%20if%20cheese%20%3D%3D%20'Gouda'%3A%0A%20%20%20%20%20%20%20%20continue%0A%20%20%20%20print%28cheese%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"
+        >View example on Python Tutor</a
+      >
     </section>
 
     <section class="slide" id="strings">
       <h2>Strings</h2>
-      <p>Placeholder</p>
+      <p>
+        <b>Strings</b> are sequences of letters surrounded by double or single
+        quotes.
+      </p>
+      <a
+        href="http://pythontutor.com/visualize.html#code=example_string%20%3D%20'this%20is%20a%20string!'%0Aanother_example_string%20%3D%20%22isn't%20this%20cool%3F%22%0A%0A%23%20Using%20index%20notation%0A%23%20First%20character%20is%20index%200!%0Aprint%28example_string%5B1%5D%29%0A%0A%23%20Length%20of%20strings%0Aprint%28len%28%22cat%22%29%29%0Aprint%28len%28example_string%29%29%0A%0A%23%20String%20concatenation%0Afirst_name%20%3D%20'Michelle'%0Alast_name%20%3D%20'Obama'%0Afull_name%20%3D%20first_name%20%2B%20%22%20%22%20%2B%20last_name%0A%0A%23%20Using%20loops%20with%20strings%0Afor%20ch%20in%20example_string%3A%0A%20%20%20%20print%28ch%29%0A%0A%23%20Checking%20values%20in%20a%20string%0Aprint%28%22b%22%20in%20%22cat%22%29%0Aprint%28%22a%22%20in%20%22cat%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"
+        >View example on Python Tutor</a
+      >
     </section>
 
     <section class="slide" id="outline-2">
