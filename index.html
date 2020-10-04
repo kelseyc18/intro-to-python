@@ -27,6 +27,9 @@
       code .value {
         color: #2f5bad;
       }
+      .slide img.full-size {
+        width: 100%;
+      }
     </style>
   </head>
   <body class="shower list">
@@ -110,7 +113,125 @@
 
     <section class="slide" id="what-is-a-program">
       <h2>What is a program?</h2>
-      <p>Placeholder</p>
+      <ul>
+        <li class="next">
+          A <b>program</b> is a sequence of instructions that have been crafted
+          to do something.
+        </li>
+        <li class="next">
+          Learning a programming language is like learning a foreign language,
+          except you’re communicating instructions to a computer.
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="rules-of-python">
+      <h2>Rules of Python 3</h2>
+      <ul>
+        <li class="next"><b>Syntax:</b> the grammar of Python</li>
+        <li class="next"><b>Reserved words:</b> the vocabulary of Python</li>
+      </ul>
+    </section>
+
+    <section class="slide" id="syntax">
+      <h2>Syntax</h2>
+      <p>Python uses <b>indentation</b> to specify blocks of code.</p>
+      <div class="columns two">
+        <div>
+          <b>Correct syntax</b>
+          <pre>
+            <code>if 10 > 0:</code>
+            <code>    print('Dog!')</code>
+            <code>else:</code>
+            <code>    print('Cat!')</code>
+          </pre>
+        </div>
+        <div>
+          <b>Wrong syntax</b>
+          <pre>
+            <code>if 10 > 0:</code>
+            <code>print('Dog!')</code>
+            <code>else:</code>
+            <code>        print('Cat!')</code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="syntax">
+      <h2>Reserved Words</h2>
+      <p>
+        <b>Reserved words</b> have special meaning in Python. Later, we'll teach
+        you how to add your own words to Python's vocabulary.
+      </p>
+      <pre>
+        <code>and       del       global      not       with</code>
+        <code>as        elif      if          or        yield</code>
+        <code>assert    else      import      pass     </code>
+        <code>break     except    in          raise</code>
+        <code>class     finally   is          return</code>
+        <code>continue  for       lambda      try</code>
+        <code>def       from      nonlocal    while</code>
+      </pre>
+      <style>
+        #syntax code {
+          line-height: 1.2;
+        }
+
+        #syntax code::before {
+          display: none;
+        }
+      </style>
+    </section>
+
+    <section class="slide" id="running-your-code">
+      <h2>Three ways to run your code</h2>
+      <ol>
+        <li>Save your code in a file</li>
+        <li>
+          Use the interactive console (for code that will be used only once)
+        </li>
+        <li>Visualize your code using Python Tutor</li>
+      </ol>
+    </section>
+
+    <section class="slide" id="running-your-code-2">
+      <h2>File and interactive console</h2>
+      <p>
+        You can
+        <a href="https://www.python.org/downloads/">download Python</a> onto
+        your computer, but we'll be using
+        <a href="https://repl.it/">Repl.it</a> to run our code online.
+      </p>
+      <b>Save your code in a file</b>
+      <img class="full-size" src="pictures/write_code.png" />
+    </section>
+
+    <section class="slide" id="running-your-code-3">
+      <h2>File and interactive console</h2>
+      <p>
+        You can
+        <a href="https://www.python.org/downloads/">download Python</a> onto
+        your computer, but we'll be using
+        <a href="https://repl.it/">Repl.it</a> to run our code online.
+      </p>
+      <b>Use the interactive console for one-time use code</b>
+      <img class="full-size" src="pictures/interactive_console.png" />
+    </section>
+
+    <section class="slide" id="running-your-code-4">
+      <h2>Visualize your code using Python Tutor</h2>
+      <p>
+        We'll be giving you links to view code in
+        <a href="http://pythontutor.com">Python Tutor</a>, which is a tool to
+        visualize what each line of code does.
+      </p>
+      <img src="pictures/pythontutor.png" />
+      <style>
+        #running-your-code-4 img {
+          width: 80%;
+        }
+      </style>
     </section>
 
     <section class="slide" id="variables">
