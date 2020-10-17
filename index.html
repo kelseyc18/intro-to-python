@@ -241,18 +241,145 @@
     </section>
 
     <section class="slide" id="variables">
-      <h2>Variables, Expressions, and Statements</h2>
-      <p>Placeholder</p>
+      <h2>Variables</h2>
+      <p>
+        <b>Variables</b> are containers for storing <b>values</b>.
+        Simple examples of values are:
+        <ul>
+          <li>strings (a combination of characters), like "apple" or "100%"</li>
+          <li>numbers, like 4 or 0.5</li>
+          <li>booleans, which are either True or False</li>
+        </ul>
+      </p>
+
+      <a href="http://pythontutor.com/visualize.html#code=is_the_sky_blue%20%3D%20True%0Afavorite_fruit%20%3D%20%22apple%22%0Anumber_of_variables%20%3D%203%0A%0Aprint%28favorite_fruit%29%0Afavorite_fruit%20%3D%20%22kiwi%22%0Aprint%28favorite_fruit%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">
+        View Example on Python Tutor
+      </a>
     </section>
 
-    <section class="slide" id="conditionals">
-      <h2>Conditionals</h2>
-      <p>Placeholder</p>
+    <section class="slide" id="input-function">
+      <h2>Input Function</h2>
+      <p>
+        Python's input function allows you to collect input from the user.
+        <br>
+        <a href="http://pythontutor.com/visualize.html#code=name%20%3D%20input%28%22What's%20your%20name%3F%5Cn%22%29%0A%0Aprint%28%22Hi,%20%22%20%2B%20name%20%2B%20%22!%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%22Kels%22%5D&textReferences=false">
+          View Example on Python Tutor
+        </a>
+      </p>
     </section>
 
-    <section class="slide" id="functions">
+    <section class="slide" id="expressions-1">
+      <h2>Expressions</h2>
+      <p>An <b>expression</b> is a combination of:
+        <ul>
+          <li>values</li>
+          <li>variables</li>
+          <li>operators (ex: math operators like + - * /)</li>
+          <li>function calls (to be explained soon)</li>
+        </ul>
+        that evaluate to a single value.</p>
+    </section>
+
+    <section class="slide" id="expressions-2">
+      <h2>Examples of Expressions</h2>
+      <p><pre>
+        <code>4 * 5  # evaluates to 20</code>
+        <code>"tri" + "angle"  # evaluates to "triangle"</code>
+        <code>my_variable + 1</code>
+      </pre></p>
+    </section>
+
+    <section class="slide" id="statements">
+      <h2>Statements</h2>
+      <p>A statement is like an instruction. We've already seen some:</p>
+      <pre>
+        <code>print("Hello world!")</code>
+        <code>new_variable = 10</code>
+      </pre>
+
+      In upcoming slides, we'll learn about more types of statements.
+    </section>
+
+    <section class="slide" id="conditionals-1">
+      <h2>Boolean Expressions</h2>
+      <p>A boolean expression is a specific type of expression that evaluates
+      to a boolean value - either true or false.
+      <br>
+        <a href="http://pythontutor.com/visualize.html#code=print%2810%20%3E%200%29%0Aprint%2810%20%3C%200%29%0Aprint%2810%20%3D%3D%200%29%0Aprint%2810%20!%3D%200%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">
+          View Example on Python Tutor
+        </a>
+      </p>
+    </section>
+
+    <section class="slide" id="conditionals-2">
+      <h2>Logical Operators</h2>
+      <p>
+        The logical operators <code>and</code>, <code>or</code>, and <code>not</code> allow us to write more complicated boolean expressions.
+        <br>
+        <a href="http://pythontutor.com/visualize.html#code=print%284%20%3E%205%20and%206%20!%3D%2010%29%0Aprint%284%20%3C%205%20and%206%20!%3D%2010%29%0Aprint%284%20%3E%205%20or%206%20!%3D%2010%29%0Aprint%28not%204%20%3E%205%29%20%20%23%20evaluates%20to%20True&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">
+          View Example on Python Tutor
+        </a>
+      </p>
+
+    </section>
+
+    <section class="slide" id="conditionals-3">
+      <h2>If/Else Statements</h2>
+      <p>
+        If/else statements let you tell the program how to make decisions.
+        Every if/else statement has a boolean expression as its condition.
+      </p>
+
+      <pre>
+        <code>if number_of_points >= 10:</code>
+        <code>    print("You win!")</code>
+        <code>else:</code>
+        <code>    print("You still need more points"</code>
+      </pre>
+    </section>
+
+    <section class="slide" id="functions-1">
       <h2>Functions</h2>
-      <p>Placeholder</p>
+      <p>
+        A function is a group of statements that together do a particular task.
+        Functions help to organize, reuse, and clarify our code.
+      </p>
+    </section>
+
+    <section class="slide" id="functions-2">
+      <h2>Syntax of a Function</h2>
+      <p>
+        <pre>
+          <code>def double(number):</code>
+          <code>    doubled = number * 2</code>
+          <code>    return doubled</code>
+        </pre>
+      </p>
+    </section>
+
+    <section class="slide" id="functions-3">
+      <h2>Calling a Function</h2>
+      <p>
+        After you define a function, you can use it by calling it, which requires the
+        function name with the correct number of parameters.
+
+        <br>
+        <a href="http://pythontutor.com/visualize.html#code=def%20double%28number%29%3A%0A%20%20%20%20return%20number%20*%202%0A%20%20%20%20%0Aprint%28double%2810%29%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">
+          View Example on Python Tutor
+        </a>
+      </p>
+    </section>
+
+    <section class="slide" id="functions-4">
+      <h2>Function Return Statement</h2>
+      <p>
+        Functions can optionally include return statements, with 0 or more expressions to return.
+
+        <br>
+        <a href="http://pythontutor.com/visualize.html#code=def%20deposit_money%28amount%29%3A%0A%20%20%20%20if%20amount%20%3C%3D%200%3A%0A%20%20%20%20%20%20%20%20return%0A%20%20%20%20print%28%22Depositing%20%24%22%20%2B%20str%28amount%29%29%0A%0Adeposit_money%28100%29%0Adeposit_money%28-10%29%20&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">
+          View Example on Python Tutor
+        </a>
+      </p>
     </section>
 
     <section class="slide" id="data-structures">
